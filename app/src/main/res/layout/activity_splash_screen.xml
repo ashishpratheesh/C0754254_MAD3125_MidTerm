@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="90dp"
         android:layout_below="@+id/satellites"
-        android:layout_marginTop="248dp"
+        android:layout_marginTop="194dp"
         android:gravity="center"
         android:text="Ashish Pratheesh: C0754254"
         android:textColor="#F5EFEF"
