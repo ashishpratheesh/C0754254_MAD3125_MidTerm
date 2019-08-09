@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -15,10 +18,11 @@ import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
 
-   RecyclerView recyclerView;
+    RecyclerView recyclerView;
 
     JSONObject obj;
     List<DataModel> dataList;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,10 +43,6 @@ public class HomeActivity extends AppCompatActivity {
 
         try {
             JSONObject obj = new JSONObject(loadJSONFromAsset());
-
-
-
-
 
 
         } catch (JSONException e) {
@@ -76,4 +76,5 @@ public class HomeActivity extends AppCompatActivity {
         }
         return json;
     }
+
 }
