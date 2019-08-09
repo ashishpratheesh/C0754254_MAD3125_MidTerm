@@ -130,7 +130,7 @@ public class HomeActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
+        //noinspection SimplifiableIfStatemen
         if (id == R.id.action_logout) {
             editor.putString("status","0");
             editor.commit();
