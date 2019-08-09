@@ -33,7 +33,7 @@ public class Login extends AppCompatActivity {
                     showAlert(Login.this,"Error","Enter Password");
                 }
                 else{
-                    if(username.getText().toString().trim().equals("admin") && password.getText().toString().trim().equals("admin")){
+                    if(username.getText().toString().trim().equals("a@a.com") && password.getText().toString().trim().equals("a@a.com")){
                         startActivity(new Intent(Login.this,HomeActivity.class));
                     }
                     else{

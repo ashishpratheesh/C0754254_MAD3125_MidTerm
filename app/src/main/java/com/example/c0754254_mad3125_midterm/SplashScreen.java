@@ -12,9 +12,13 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-
-        startActivity(new Intent(this, Login.class));
-        finish();
-
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent i = new Intent(SplashScreen.this, Login.class);
+                startActivity(i);
+                finish();
+            }
+        }, 5000); // wait for 5 seconds
     }
 }

@@ -15,17 +15,20 @@ import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
 
-   RecyclerView recyclerView;
+    RecyclerView recyclerView;
 
     JSONObject obj;
     List<DataModel> dataList;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+    }
+}
 
 
-        recyclerView = findViewById(R.id.recyclerView);
+       /*recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         try {
@@ -77,3 +80,4 @@ public class HomeActivity extends AppCompatActivity {
         return json;
     }
 }
+*/
