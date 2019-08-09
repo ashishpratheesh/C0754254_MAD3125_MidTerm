@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#802B2B"
+    android:background="#C58181"
     tools:context=".Login">
 
     <TextView
@@ -16,6 +16,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="591dp"
+        android:fontFamily="@font/alfa_slab_one"
         android:gravity="center"
         android:text="Login"
         android:textSize="24sp"
