@@ -23,10 +23,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
-
     RecyclerView recyclerView;
     JSONObject obj;
-    List<DataModel> dataList = new ArrayList<>();
+    List<DataModel> dataList = new ArrayList<DataModel>();
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
 
@@ -87,7 +86,7 @@ public class HomeActivity extends AppCompatActivity {
         if (jsonString != null)
         {
             try {
-                 mJSONArray = new JSONArray(jsonString);
+                JSONArray mJSONArray = new JSONArray(jsonString);
                 dataList = new ArrayList<>();
                 for(int i = 0; i < mJSONArray.length();i++){
                     DataModel dataModel = fetchData(mJSONArray.getJSONObject(i));
@@ -143,7 +142,6 @@ public class HomeActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
     public void onClickListener(int position) {
         Toast.makeText(this, "You Clicked on Position "+position, Toast.LENGTH_SHORT).show();
     }
